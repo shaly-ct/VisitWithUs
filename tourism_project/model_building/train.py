@@ -19,7 +19,7 @@ import mlflow
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("mlops-training-experiment")
 
-api = HfApi(token="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")
+api = HfApi(token=os.getenv("HF_TOKEN"))
 
 repo_id = "Shalyn/tourism-project"
 
