@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #get variables for hf
-api = HfApi(token="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")
+api = HfApi(token="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")
 dataset_path = "hf://datasets/Shalyn/tourism-project/tourism.csv"
 input_dataset = pd.read_csv(dataset_path)
 print("Dataset loaded successfully.")
