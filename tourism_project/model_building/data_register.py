@@ -2,10 +2,10 @@
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 from huggingface_hub import HfApi, create_repo
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 #Load env (ensure .env file is present or HF_TOKEN is in Colab Secrets)
-load_dotenv()
+#load_dotenv()
 
 #setting up repo id and repo type
 repo_id = "Shalyn/tourism-project"
