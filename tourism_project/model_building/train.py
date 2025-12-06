@@ -152,7 +152,7 @@ with mlflow.start_run(nested=True):
 repo_id = "Shalyn/tourism-project"
 repo_type= "model"
 
-api = HfApi(token=token=os.getenv("HF_TOKEN"))
+api = HfApi(token=os.getenv("HF_TOKEN"))
 
 #Checking if the repo already exist
 try:
