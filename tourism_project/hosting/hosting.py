@@ -1,7 +1,7 @@
 from huggingface_hub import HfApi
 import os
 
-api = HfApi(token="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")
+api = HfApi(token="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")
 api.upload_folder(
     folder_path="tourism_project/deployment",     # Corrected: the local folder containing your files, relative to repo root
     repo_id="Shalyn/tourism-project",          # the target repo
