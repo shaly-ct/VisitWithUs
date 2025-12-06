@@ -12,7 +12,7 @@ repo_id = "Shalyn/tourism-project"
 repo_type = "dataset"
 
 #Initialise HF api with token from environment variable or Colab Secrets
-api = HfApi(token="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")
+api = HfApi(token="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")
 
 #connecting to hf space
 try:
@@ -21,7 +21,7 @@ try:
 except (RepositoryNotFoundError, HfHubHTTPError) as e:
   print(f"Space '{repo_id}' is not found or inaccessible. Attempting to create the repo...")
   # Ensure proper authentication for create_repo as well
-  create_repo(repo_id=repo_id,repo_type=repo_type,private=False, token="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")
+  create_repo(repo_id=repo_id,repo_type=repo_type,private=False, token="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")
   print(f"Space '{repo_id}' is created")
 
 api.upload_folder(
