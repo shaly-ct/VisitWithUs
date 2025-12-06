@@ -152,7 +152,7 @@ with mlflow.start_run(nested=True):
 repo_id = "Shalyn/tourism-project"
 repo_type= "model"
 
-api = HfApi(token="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")
+api = HfApi(token=token=os.getenv("HF_TOKEN"))
 
 #Checking if the repo already exist
 try:
@@ -168,5 +168,5 @@ api.upload_file(
     path_or_fileobj=model_filename,
     path_in_repo="best_tourism_pred_model.joblib",
     repo_id=repo_id,
-    repo_type=repo_type,
+    repo_type=repo_type
 )
