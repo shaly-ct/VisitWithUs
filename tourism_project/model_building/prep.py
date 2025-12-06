@@ -4,10 +4,6 @@ import sklearn
 import os
 from sklearn.model_selection import train_test_split
 from huggingface_hub import login, HfApi
-from dotenv import load_dotenv
-
-#Load env
-load_dotenv()
 
 #get variables for hf
 api = HfApi(token=os.getenv("HF_TOKEN"))
