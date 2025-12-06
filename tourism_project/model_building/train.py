@@ -12,9 +12,8 @@ import joblib
 # for creating a folder
 import os
 # for hugging face space authentication to upload files
-from huggingface_hub import login, HfApi, create_repo
-from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
-from huggingface_hub import hf_hub_download
+from huggingface_hub import login, HfApi, create_repo,hf_hub_download
+from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError 
 import mlflow
 
 mlflow.set_tracking_uri("http://localhost:5000")
